@@ -2,11 +2,11 @@
 
 
 
-Requisitos funcionais
+*Requisitos funcionais
 
 
 
 
-Requisitos não funcionais
+*Requisitos não funcionais
 
 
