@@ -2,7 +2,7 @@
 
 ***todos os requisitos foram discutidos em conjunto, portanto todos os integrantes tiveram participação efetiva na elaboração dos requisitos: carolinemendg & fabriciosdsilva & MWellen97 & rhamybachour 
 
-__Requisitos funcionais👌
+_ Requisitos funcionais👍
 
   - O sistema manterá as portas fechadas até que os sensores acusem presença.
 
@@ -11,7 +11,7 @@ __Requisitos funcionais👌
   - O sistema fechará as portas após um intervalo de tempo "x1" sem mudança no sinal do sensor.
 
 
-__Requisitos não funcionais
+_ Requisitos não funcionais✌
 
   - O sistema monitorará as leituras dos sensores constantemente.
 
