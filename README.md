@@ -2,11 +2,11 @@
 
 
 
-*Requisitos funcionais
+* Requisitos funcionais
 
 * teste
 
 
-*Requisitos não funcionais
+* Requisitos não funcionais
 
 
