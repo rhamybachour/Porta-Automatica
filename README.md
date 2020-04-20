@@ -1,6 +1,6 @@
 # Porta-Automatica
 
-
+***todos os requisitos foram discutidos em conjunto, portanto todos os integrantes tiveram participação efetiva na elaboração dos requisitos: carolinemendg & fabriciosdsilva & MWellen97 & rhamybachour 
 
 * Requisitos funcionais
 
