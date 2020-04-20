@@ -2,7 +2,7 @@
 
 ***todos os requisitos foram discutidos em conjunto, portanto todos os integrantes tiveram participação efetiva na elaboração dos requisitos: carolinemendg & fabriciosdsilva & MWellen97 & rhamybachour 
 
-__Requisitos funcionais
+__Requisitos funcionais👌
 
   - O sistema manterá as portas fechadas até que os sensores acusem presença.
 
