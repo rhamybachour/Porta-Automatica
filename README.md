@@ -8,10 +8,10 @@ Pretende-se implementar componentes pré requisitados neste projeto (Beaglebone,
 
 ## Integrantes
 
-Caroline Mendonça Gomes
-Fabrício Santos
-Martin Wellendorf
-Rhamy Bachour
+- Caroline Mendonça Gomes
+- Fabrício Santos
+- Martin Wellendorf
+- Rhamy Bachour
 
 
 ## Requisitos funcionais
