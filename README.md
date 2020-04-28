@@ -36,8 +36,6 @@ Projeto desenvolvido para a discplina de Sistemas Embarcados (SEM0544, 1o semest
     
   - O sistema fechará as portas após um intervalo de tempo "x1" sem mudança no sinal do sensor.
   
-  - 
-  
   
   ## Considerações
   
