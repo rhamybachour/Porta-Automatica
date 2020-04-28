@@ -5,6 +5,7 @@
 ## Descrição
 
 Pretende-se implementar componentes pré requisitados neste projeto (Beaglebone, comunicação CAN, controlador e motor) para confeccionar uma porta que se abrirá automaticamente na presença de uma pessoa. Seu funcionamento se dará a partir de uma determinada distância detectada pelo sensor de proximidade (ultra sônico), fazendo com que o motor rotacione em um sentido, simulando a abertura da porta. Caso a distância detectada volte à leitura padrão (inicial), o motor irá rotacionar em sentido contrário, simulando o fechamento da porta automática. Toda a comunicação do motor com a placa lógica será realizada através do protocolo CAN, bem como o envio do sinal do sensor para a placa. Além disso, o sistema também registrará os momentos em que a porta se abriu e fechou, apartir destas informações podemos obter o período que a porta permaneceu aberta e sua frequência de abertura ao longo do tempo.
+Projeto desenvolvido para a discplina de Sistemas Embarcados (SEM0544, 1o semestre de 2020) do Curso de Engenharia Mecatrônica EESC-USP.
 
 ## Integrantes
 
