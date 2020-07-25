@@ -1,6 +1,7 @@
 import random
 import time
 
+
 class Cores:
     """
     Classe responsável pela coloração do texto
@@ -15,7 +16,18 @@ class Calendario:
     """
     Classe responsável pela definição do objeto calendario
     """
-    pass
+
+    def __init__(self):
+        self.__tempo_real = 0
+
+    def getTempoReal(self):
+        return self.__tempo_real
+
+    def setTempoReal(self, tempoReal):
+        self.__tempo_real = tempoReal
+
+    def geraPessoa(self):
+        return random.randint(1,5)
 
 
 class Motor:
@@ -23,14 +35,45 @@ class Motor:
     Classe responsável pela definição do objeto motor
     """
 
-	pass
+    def __init__(self):
+        #Parado = False / Em funcionamento = True
+        self.__estado = False
+        
+        #Fechado = False / Aberto = True
+        self.__posicao = False
+
+
+    def setEstado(self, estado):
+        self.__estado = estado
+
+
+    def getEstado(self):
+        return self.__estado
+
+
+    def setPosicao(self, posicao):
+        self.__posicao = posicao
+
+
+    def getPosicao(self):
+        return self.__posicao
 
 class Sensor:
     """
     Classe responsável pela definição do objeto sensor
     """
 
-    pass
+    def __init__(self):
+        #Sem presença = False / Presença = True
+        self.__estado = False
+
+
+    def setEstado(self, estado):
+        self.__estado = estado
+
+
+    def getEstado(self):
+        return self.__estado
 
 class Porta:
     """
