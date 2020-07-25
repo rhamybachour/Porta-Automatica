@@ -1,6 +1,16 @@
 import random
 import time
 
+class Cores:
+    """
+    Classe responsável pela coloração do texto
+    """
+    
+    RED = '\033[91m'
+    YELLOW = '\033[93m'
+    GREEN = '\033[92m'
+    BLUE = '\033[94m'
+
 class Calendario:
     """
     Classe responsável pela definição do objeto calendario
