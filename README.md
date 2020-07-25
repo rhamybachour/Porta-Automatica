@@ -36,7 +36,13 @@ Projeto desenvolvido para a discplina de Sistemas Embarcados (SEM0544, 1o semest
     
   - O sistema fechará as portas após um intervalo de tempo "x1" sem mudança no sinal do sensor.
   
-  
+   ## Como faremos para contemplar os requisitos
+ 
+ - O sistema fará constante leitura dos sensores para garantir a correta detecção de pessoas, e consequentemente o devido acionamento dos motores para abertura da porta, e também fechá-la conforme as condições especificadas;
+ 
+ - Para cumprir as especificações de desempenho mostradas (tempo de resposta e recorrência de falhas), a porta contará com mecanismo de fácil movimentação, oferencendo a menor restencia possível, dentro de um bom custo benefício. Além disso, utilizaremos motores que forneçam uma resposta adequada ao comportamento desejado.
+ 
+ - A grande maioria das portas automáticas comerciais têm mecanismo composto por motor, atuador e correia dentada para transmissão do movimento. O grupo realizaria a confecção do protótipo seguindo a mesma ideia, uma vez se trata de uma solução barata e eficiente para o sistema.
   
  ## Simulação
  
@@ -45,6 +51,8 @@ Projeto desenvolvido para a discplina de Sistemas Embarcados (SEM0544, 1o semest
 ![Alt text](/simulacao.JPG?raw=true "Simulação")
 
   ## Considerações
+  
+  - Com o requisito de leitura de horário e sentido de rotação dos motores, buscamos fornecer informações a cerca do uso da porta, permitindo a obtenção de dados tais como: Tempo que a porta permanceu aberta e fechada em determinado horário do dia; quantidade de vezes que a porta foi aberta; mensurar movimentação de pessoas no ambiente durante um período pré definido. Tudo isso permitirá análises de diversos tipos, beneficiando o estabelecimento que fizer uso do produto. Facilitando a tomada de decisão a cerca do sistema de refrigeração, circulação de pessoas no ambiente em diferentes épocas do ano. E no caso de mais de uma porta instalada, para o caso dos shoppings por exemplo, verificar qual área do shopping tem sido mais acionada. 
   
 **todos os requisitos foram discutidos em conjunto, portanto todos os integrantes tiveram participação efetiva na elaboração dos requisitos: @carolinemendg & @fabriciosdsilva & @MWellen97 & @rhamybachour 
 
