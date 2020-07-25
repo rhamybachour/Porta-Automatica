@@ -48,7 +48,7 @@ Projeto desenvolvido para a discplina de Sistemas Embarcados (SEM0544, 1o semest
  
  - A grande maioria das portas automáticas comerciais têm mecanismo composto por motor, atuador e correia dentada para transmissão do movimento. O grupo realizaria a confecção do protótipo seguindo a mesma ideia, uma vez se trata de uma solução barata e eficiente para o sistema.
   
- ## Simulação
+ ## Simulação 
  
  O projeto sofreu algumas alterações em relação ao desenvolvimento, devido a Pandamia do Covid-19, a construção física do projeto não pode ser executada e portanto o projeto se limitou a algumas simulações. Assim, desenvolveu-se uma aplicação em Python simulando o cenário de controle e automação das portas. Na imagem abaixo é mostrado um trecho das simulações realizadas. A simulação foi executada durante 100 segundos.
 
