@@ -39,6 +39,8 @@ Projeto desenvolvido para a discplina de Sistemas Embarcados (SEM0544, 1o semest
   
   
  ## Simulação
+ 
+ O projeto sofreu algumas alterações em relação ao desenvolvimento, devido a Pandamia do Covid-19, a construção física do projeto não pode ser executada e portanto o projeto se limitou a algumas simulações. Assim, desenvolveu-se uma aplicação em Python simulando o cenário de controle e automação das portas. Na imagem abaixo é mostrado um trecho das simulações realizadas.
 
 ![Alt text](/simulacao.JPG?raw=true "Simulação")
 
