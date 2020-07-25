@@ -243,11 +243,11 @@ if __name__ == '__main__':
 
         #Sensor entrada
         if sensor == 0:
-	    porta.sensorPortaEntrada.setEstado(True)
+            porta.sensorPortaEntrada.setEstado(True)
 
         #Sensor saida
         else:
-	    porta.sensorPortaSaida.setEstado(True)
+            porta.sensorPortaSaida.setEstado(True)
 
         #Inicia a rotina de abertura de portas
         porta.detectaPessoa()
