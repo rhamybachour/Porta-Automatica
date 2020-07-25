@@ -4,7 +4,7 @@
 
 ## Motivação
 
-O momento de insegurança e medo que o novo coronavírus trouxe ao ano de 2019 e 2020 fez com que grande parte da população mundial começasse a prestar mais atenção em algumas atitudes que antes passavam despercebidas, como a lavagem correta das mãos, alimentação mais saudável, contato com superfícies públicas sem proteção. Levando isso em consideração, surge a grande motivação de criar um sistema para uma porta automática, na qual não seria necessário tocar em uma maçaneta sem as proteções adequadas.
+O momento de insegurança e medo que o novo coronavírus trouxe aos anos de 2019 e 2020 fez com que grande parte da população mundial começasse a prestar mais atenção em algumas atitudes que antes passavam despercebidas, como a lavagem correta das mãos, alimentação mais saudável e contato com superfícies públicas sem proteção. Levando isso em consideração, surge a grande motivação de criar um sistema para uma porta automática, na qual não seria necessário tocar em uma maçaneta sem as proteções adequadas, uma simples aproximação é suficiente para adentrar e sair do local.
 
 ## Descrição
 
