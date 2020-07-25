@@ -232,25 +232,25 @@ if __name__ == '__main__':
     porta = Porta(calendario, motor_esquerdo, motor_direito, sensor_entrada, sensor_saida)
 
 
-#Roda a simulação durante 100 segundos
-	while calendario.getTempoReal() < 100:
+    #Roda a simulação durante 100 segundos
+    while calendario.getTempoReal() < 100:
 
-	    #Avança o tempo até a chegada de uma pessoa (entre 1 e 5 segundos)
-	    calendario.setTempoReal(calendario.getTempoReal() + calendario.geraPessoa())
+        #Avança o tempo até a chegada de uma pessoa (entre 1 e 5 segundos)
+        calendario.setTempoReal(calendario.getTempoReal() + calendario.geraPessoa())
 
-	    #Ativa o sensor de entrada/saída da porta para uma chegada aleatória
-	    sensor = random.randint(0,1)
+        #Ativa o sensor de entrada/saída da porta para uma chegada aleatória
+        sensor = random.randint(0,1)
 
-	    #Sensor entrada
-	    if sensor == 0:
-	        porta.sensorPortaEntrada.setEstado(True)
+        #Sensor entrada
+        if sensor == 0:
+	    porta.sensorPortaEntrada.setEstado(True)
 
-	    #Sensor saida
-	    else:
-	        porta.sensorPortaSaida.setEstado(True)
+        #Sensor saida
+        else:
+	    porta.sensorPortaSaida.setEstado(True)
 
-	    #Inicia a rotina de abertura de portas
-	    porta.detectaPessoa()
+        #Inicia a rotina de abertura de portas
+        porta.detectaPessoa()
 
-	    #Verifica se há presença de pessoas na porta
-	    porta.verificaPessoa()
+        #Verifica se há presença de pessoas na porta
+        porta.verificaPessoa()
