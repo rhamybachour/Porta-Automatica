@@ -164,10 +164,60 @@ class Porta:
                 self.fechaPorta()
 	
     def abrePorta(self):	
-        pass
+        
+        #Verifica se as portas estão fechadas
+        if self.motorPortaEsquerda.getPosicao == False and self.motorPortaDireita.getPosicao == False:
+            #Aciona os motores da porta
+            self.motorPortaEsquerda.setEstado(True)
+            self.motorPortaDireita.setEstado(True)
+
+        #Passar o tempo de abertura da porta
+        print(Cores.BLUE + "[%d] ABRINDO PORTAS " % calendario.getTempoReal(), end = '')
+        time.sleep(1)
+        print(".", end = '')        
+        time.sleep(0.5)
+        print(".", end = '')        
+        time.sleep(0.5)
+        print(".\n")
+        time.sleep(1)
+        self.calendario.setTempoReal(calendario.getTempoReal() + self.__tempoAberturaPorta)
+
+        #Desliga motores e configura como porta aberta
+        self.motorPortaEsquerda.setEstado(False)
+        self.motorPortaDireita.setEstado(False)
+        self.motorPortaEsquerda.setPosicao(True)
+        self.motorPortaDireita.setPosicao(True)
+        self.__estadoPorta = True
+        print(Cores.GREEN + "[%d] PORTAS ABERTAS" % calendario.getTempoReal())
+        print(Cores.GREEN + "[%d] SEJAM BEM VINDOS!\n\n" % calendario.getTempoReal())
 	
     def fechaPorta(self):
-        pass
+        
+        #Verifica se as portas estão abertas
+        if self.motorPortaEsquerda.getPosicao == True and self.motorPortaDireita.getPosicao == True:
+            #Aciona os motores da porta
+            self.motorPortaEsquerda.setEstado(True)
+            self.motorPortaDireita.setEstado(True)
+
+        #Passar o tempo de abertura da porta
+        print(Cores.BLUE + "[%d] FECHANDO PORTAS " % calendario.getTempoReal(), end = '')
+        time.sleep(1)
+        print(".", end = '')        
+        time.sleep(0.5)
+        print(".", end = '')        
+        time.sleep(0.5)
+        print(".\n")
+        time.sleep(1)
+        self.calendario.setTempoReal(calendario.getTempoReal() + self.__tempoFechamentoPorta)
+
+        #Desliga motores e configura como porta aberta
+        self.motorPortaEsquerda.setEstado(False)
+        self.motorPortaDireita.setEstado(False)
+        self.motorPortaEsquerda.setPosicao(False)
+        self.motorPortaDireita.setPosicao(False)
+        self.__estadoPorta = False
+        print(Cores.RED + "[%d] PORTAS FECHADAS" % calendario.getTempoReal())
+        print(Cores.RED + "[%d] OBRIGADO E VOLTE SEMPRE!\n\n" % calendario.getTempoReal())
 	
 		
 ################## Simulação ###############################
@@ -180,3 +230,27 @@ if __name__ == '__main__':
     motor_esquerdo = Motor()
     motor_direito = Motor()
     porta = Porta(calendario, motor_esquerdo, motor_direito, sensor_entrada, sensor_saida)
+
+
+#Roda a simulação durante 100 segundos
+	while calendario.getTempoReal() < 100:
+
+	    #Avança o tempo até a chegada de uma pessoa (entre 1 e 5 segundos)
+	    calendario.setTempoReal(calendario.getTempoReal() + calendario.geraPessoa())
+
+	    #Ativa o sensor de entrada/saída da porta para uma chegada aleatória
+	    sensor = random.randint(0,1)
+
+	    #Sensor entrada
+	    if sensor == 0:
+	        porta.sensorPortaEntrada.setEstado(True)
+
+	    #Sensor saida
+	    else:
+	        porta.sensorPortaSaida.setEstado(True)
+
+	    #Inicia a rotina de abertura de portas
+	    porta.detectaPessoa()
+
+	    #Verifica se há presença de pessoas na porta
+	    porta.verificaPessoa()
