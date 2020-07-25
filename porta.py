@@ -164,19 +164,19 @@ class Porta:
                 self.fechaPorta()
 	
     def abrePorta(self):	
-		pass
+        pass
 	
     def fechaPorta(self):
-		pass
+        pass
 	
 		
 ################## Simulação ###############################
 if __name__ == '__main__':
 
-	#Alocação dos objetos que compõem a porta
-	calendario = Calendario()
-	sensor_entrada = Sensor()
-	sensor_saida = Sensor()
-	motor_esquerdo = Motor()
-	motor_direito = Motor()
-	porta = Porta(calendario, motor_esquerdo, motor_direito, sensor_entrada, sensor_saida)
+    #Alocação dos objetos que compõem a porta
+    calendario = Calendario()
+    sensor_entrada = Sensor()
+    sensor_saida = Sensor()
+    motor_esquerdo = Motor()
+    motor_direito = Motor()
+    porta = Porta(calendario, motor_esquerdo, motor_direito, sensor_entrada, sensor_saida)
